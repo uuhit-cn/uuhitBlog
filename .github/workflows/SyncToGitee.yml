@@ -16,4 +16,3 @@ jobs:
           source-repo: git@github.com:uuhit-cn/uuhitBlog.git
           # 注意替换为你的 Gitee 目标仓库地址， 直接复制仓库地址的git版
           destination-repo: git@gitee.com:uuhit/uuhitBlog.git
-          ssh-private-key: ${{ secrets.GITHUBTOGITEE_PRIVATE }}
