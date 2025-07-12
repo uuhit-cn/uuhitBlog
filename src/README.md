@@ -2,9 +2,9 @@
 home: true
 layout: Blog
 icon: house
-title: Blog Home
+title: myBlog
 heroImage: https://theme-hope-assets.vuejs.press/logo.svg
-heroText: The name of your blog
+heroText: 自在飞花轻似梦
 tagline: You can put your slogan here
 heroFullScreen: true
 projects:

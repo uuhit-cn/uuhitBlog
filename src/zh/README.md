@@ -2,9 +2,9 @@
 home: true
 layout: Blog
 icon: house
-title: 博客主页
+title: myBlog
 heroImage: https://theme-hope-assets.vuejs.press/logo.svg
-heroText: 你博客的名称
+heroText: 自在飞花轻似梦
 heroFullScreen: true
 tagline: 你可以在这里放置你的口号与标语
 projects:
