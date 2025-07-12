@@ -1,4 +1,4 @@
-name: Mirror to Gitee
+name: Sync to Gitee
 
 on:
   push: # 代码推送时触发
@@ -18,7 +18,7 @@ jobs:
           # 目标仓库（Gitee）
           dst: gitee/uuhit
           # Gitee账号的SSH私钥
-          dst_key: ${{ secrets.GITHUBTOGITEE_PRIVATE }}
+          dst_key: ${{ secrets.ACCESS_TOKEN }}
           # 要同步的仓库列表
           static_list: "uuhitBlog"
           # 强制更新（解决分支历史冲突）
