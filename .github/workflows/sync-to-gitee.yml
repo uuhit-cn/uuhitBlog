@@ -19,31 +19,17 @@ jobs:
         run: |
           git config --global user.name "GitHub Actions"
           git config --global user.email "actions@github.com"
-      
-      - name: Create askpass script
-        shell: bash
-        run: |
-          cat > askpass.sh <<'EOF'
-          #!/bin/sh
-          if [ "$1" = "https://${GITEE_USERNAME}@gitee.com" ]; then
-            echo "${GITEE_TOKEN}"
-          else
-            exit 1
-          fi
-          EOF
-          chmod +x askpass.sh
-        env:
-          GITEE_TOKEN: ${{ secrets.GITEE_TOKEN }}
+          # 设置Git凭证存储
+          git config --global credential.helper store
+          # 将Gitee凭证写入存储
+          echo "https://${{ secrets.GITEE_USERNAME }}:${{ secrets.GITEE_TOKEN }}@gitee.com" > ~/.git-credentials
       
       - name: Add Gitee remote
         run: |
-          git remote add gitee "https://${{ secrets.GITEE_USERNAME }}@gitee.com/uuhit/uuhitBlog.git"
+          git remote add gitee "https://gitee.com/uuhit/uuhitBlog.git"
           git remote -v
       
       - name: Push to Gitee
-        env:
-          GIT_ASKPASS: ./askpass.sh
-          GITEE_TOKEN: ${{ secrets.GITEE_TOKEN }}
         run: |
           # 推送所有分支
           git push -u gitee --all -f
