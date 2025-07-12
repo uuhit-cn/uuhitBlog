@@ -6,6 +6,8 @@ import { enSidebar, zhSidebar } from "./sidebar/index.js";
 export default hopeTheme({
   hostname: "https://mister-hope.github.io",
 
+  pageInfo: false,   // uuhit ，全局禁用 页面信息 小标签
+
   author: {
     name: "Mr.Hope",
     url: "https://mister-hope.com",
