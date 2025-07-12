@@ -1,19 +1,27 @@
-name: Sync To Gitee
+name: Mirror to Gitee
 
-on: [ push, delete, create ]
+on:
+  push: # 代码推送时触发
+    branches: [ main, master ]
+  schedule: # 每天定时同步（UTC时间0点，北京时间8点）
+    - cron: '0 0 * * *'
 
 jobs:
-  build:
+  mirror:
     runs-on: ubuntu-latest
     steps:
       - name: Sync to Gitee
-        uses: wearerequired/git-mirror-action@master
-        env:
-          # 注意在 Settings->Secrets 配置， GITHUBTOGITEE_PRIVATE 前面设置的私钥的名称
-          SSH_PRIVATE_KEY: ${{ secrets.GITHUBTOGITEE_PRIVATE }}
+        uses: Yikun/hub-mirror-action@master
         with:
-          # 注意替换为你的 GitHub 源仓库地址， 直接复制仓库地址的git版
-          source-repo: git@github.com:uuhit-cn/uuhitBlog.git
-          # 注意替换为你的 Gitee 目标仓库地址， 直接复制仓库地址的git版
-          destination-repo: git@gitee.com:uuhit/uuhitBlog.git
-          ssh-private-key: ${{ secrets.GITHUBTOGITEE_PRIVATE }}
+          # 源仓库（GitHub）
+          src: github/uuhit-cn
+          # 目标仓库（Gitee）
+          dst: gitee/uuhit
+          # Gitee账号的SSH私钥
+          dst_key: ${{ secrets.GITHUBTOGITEE_PRIVATE }}
+          # 要同步的仓库列表
+          static_list: "uuhitBlog"
+          # 强制更新（解决分支历史冲突）
+          force_update: true
+          # 调试模式（输出详细信息）
+          debug: true
