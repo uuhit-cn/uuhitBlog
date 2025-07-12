@@ -1,0 +1,7 @@
+# 在 Action 中添加测试步骤：
+- name: Test SSH Connection
+  run: |
+    mkdir -p ~/.ssh
+    echo "${{ secrets.GITEE_PRIVATE_KEY }}" > ~/.ssh/key
+    chmod 600 ~/.ssh/key
+    ssh -T -i ~/.ssh/key git@gitee.com
