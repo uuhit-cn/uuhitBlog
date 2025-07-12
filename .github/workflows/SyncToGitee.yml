@@ -20,7 +20,7 @@ jobs:
           # Gitee账号的SSH私钥
           dst_key: ${{ secrets.ACCESS_TOKEN }}
           # Gitee账号的访问令牌（用于创建仓库）
-          dst_token: ${{ secrets.GITEE_TOKEN }}
+          dst_token: ${{ secrets.GITHUBTOGITEE_TOKEN }}
           # 要同步的仓库列表
           static_list: "uuhitBlog"
           # 强制更新（解决分支历史冲突）
