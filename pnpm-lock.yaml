@@ -11,6 +11,9 @@ importers:
       '@vuepress/bundler-vite':
         specifier: 2.0.0-rc.24
         version: 2.0.0-rc.24(@types/node@24.0.13)(sass-embedded@1.89.2)
+      '@vuepress/plugin-search':
+        specifier: 2.0.0-rc.112
+        version: 2.0.0-rc.112(vuepress@2.0.0-rc.24(@vuepress/bundler-vite@2.0.0-rc.24(@types/node@24.0.13)(sass-embedded@1.89.2))(vue@3.5.17))
       sass-embedded:
         specifier: ^1.89.2
         version: 1.89.2
@@ -22,7 +25,7 @@ importers:
         version: 2.0.0-rc.24(@vuepress/bundler-vite@2.0.0-rc.24(@types/node@24.0.13)(sass-embedded@1.89.2))(vue@3.5.17)
       vuepress-theme-hope:
         specifier: 2.0.0-rc.94
-        version: 2.0.0-rc.94(markdown-it@14.1.0)(sass-embedded@1.89.2)(vuepress@2.0.0-rc.24(@vuepress/bundler-vite@2.0.0-rc.24(@types/node@24.0.13)(sass-embedded@1.89.2))(vue@3.5.17))
+        version: 2.0.0-rc.94(@vuepress/plugin-search@2.0.0-rc.112(vuepress@2.0.0-rc.24(@vuepress/bundler-vite@2.0.0-rc.24(@types/node@24.0.13)(sass-embedded@1.89.2))(vue@3.5.17)))(markdown-it@14.1.0)(sass-embedded@1.89.2)(vuepress@2.0.0-rc.24(@vuepress/bundler-vite@2.0.0-rc.24(@types/node@24.0.13)(sass-embedded@1.89.2))(vue@3.5.17))
 
 packages:
 
@@ -935,6 +938,11 @@ packages:
         optional: true
       sass-loader:
         optional: true
+
+  '@vuepress/plugin-search@2.0.0-rc.112':
+    resolution: {integrity: sha512-liQxClnwXRn3V8I3OORvS2/OwHSx2pi0c3F/V/ji++Zy4DVpSEzhMJAfHkHmo1KKzokqakSBiJz8bQudp5ZMFw==}
+    peerDependencies:
+      vuepress: 2.0.0-rc.24
 
   '@vuepress/plugin-seo@2.0.0-rc.112':
     resolution: {integrity: sha512-WWZ0Dx1MxF9Mj6UVdB8TP5GozTNv51ZQQP6EAKYzprKCw0RVQYg5/tXWlg7IWcSw72go5iFiMBj5wZQigN+t4g==}
@@ -3084,6 +3092,15 @@ snapshots:
     transitivePeerDependencies:
       - typescript
 
+  '@vuepress/plugin-search@2.0.0-rc.112(vuepress@2.0.0-rc.24(@vuepress/bundler-vite@2.0.0-rc.24(@types/node@24.0.13)(sass-embedded@1.89.2))(vue@3.5.17))':
+    dependencies:
+      '@vuepress/helper': 2.0.0-rc.112(vuepress@2.0.0-rc.24(@vuepress/bundler-vite@2.0.0-rc.24(@types/node@24.0.13)(sass-embedded@1.89.2))(vue@3.5.17))
+      chokidar: 4.0.3
+      vue: 3.5.17
+      vuepress: 2.0.0-rc.24(@vuepress/bundler-vite@2.0.0-rc.24(@types/node@24.0.13)(sass-embedded@1.89.2))(vue@3.5.17)
+    transitivePeerDependencies:
+      - typescript
+
   '@vuepress/plugin-seo@2.0.0-rc.112(vuepress@2.0.0-rc.24(@vuepress/bundler-vite@2.0.0-rc.24(@types/node@24.0.13)(sass-embedded@1.89.2))(vue@3.5.17))':
     dependencies:
       '@vuepress/helper': 2.0.0-rc.112(vuepress@2.0.0-rc.24(@vuepress/bundler-vite@2.0.0-rc.24(@types/node@24.0.13)(sass-embedded@1.89.2))(vue@3.5.17))
@@ -4182,7 +4199,7 @@ snapshots:
     transitivePeerDependencies:
       - typescript
 
-  vuepress-theme-hope@2.0.0-rc.94(markdown-it@14.1.0)(sass-embedded@1.89.2)(vuepress@2.0.0-rc.24(@vuepress/bundler-vite@2.0.0-rc.24(@types/node@24.0.13)(sass-embedded@1.89.2))(vue@3.5.17)):
+  vuepress-theme-hope@2.0.0-rc.94(@vuepress/plugin-search@2.0.0-rc.112(vuepress@2.0.0-rc.24(@vuepress/bundler-vite@2.0.0-rc.24(@types/node@24.0.13)(sass-embedded@1.89.2))(vue@3.5.17)))(markdown-it@14.1.0)(sass-embedded@1.89.2)(vuepress@2.0.0-rc.24(@vuepress/bundler-vite@2.0.0-rc.24(@types/node@24.0.13)(sass-embedded@1.89.2))(vue@3.5.17)):
     dependencies:
       '@vuepress/helper': 2.0.0-rc.112(vuepress@2.0.0-rc.24(@vuepress/bundler-vite@2.0.0-rc.24(@types/node@24.0.13)(sass-embedded@1.89.2))(vue@3.5.17))
       '@vuepress/plugin-active-header-links': 2.0.0-rc.112(vuepress@2.0.0-rc.24(@vuepress/bundler-vite@2.0.0-rc.24(@types/node@24.0.13)(sass-embedded@1.89.2))(vue@3.5.17))
@@ -4225,6 +4242,7 @@ snapshots:
       vuepress-plugin-md-enhance: 2.0.0-rc.94(markdown-it@14.1.0)(sass-embedded@1.89.2)(vuepress@2.0.0-rc.24(@vuepress/bundler-vite@2.0.0-rc.24(@types/node@24.0.13)(sass-embedded@1.89.2))(vue@3.5.17))
       vuepress-shared: 2.0.0-rc.94(vuepress@2.0.0-rc.24(@vuepress/bundler-vite@2.0.0-rc.24(@types/node@24.0.13)(sass-embedded@1.89.2))(vue@3.5.17))
     optionalDependencies:
+      '@vuepress/plugin-search': 2.0.0-rc.112(vuepress@2.0.0-rc.24(@vuepress/bundler-vite@2.0.0-rc.24(@types/node@24.0.13)(sass-embedded@1.89.2))(vue@3.5.17))
       sass-embedded: 1.89.2
     transitivePeerDependencies:
       - '@vue/repl'

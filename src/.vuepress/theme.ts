@@ -211,6 +211,11 @@ export default hopeTheme({
     icon: {
       prefix: "fa6-solid:",
     },
+    
+    // uuhit ，搜索框
+    search: {
+      // ...
+    },
 
     // install @vuepress/plugin-pwa and uncomment these if you want a PWA
     // pwa: {
