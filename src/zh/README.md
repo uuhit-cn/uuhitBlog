@@ -3,9 +3,10 @@ home: true
 layout: Blog
 icon: house
 title: myBlog
-heroImage: https://theme-hope-assets.vuejs.press/logo.svg
+hero: false
+heroImage: /taijibig.png
 heroText: 自在飞花轻似梦
-heroFullScreen: true
+heroFullScreen: false
 tagline: 你可以在这里放置你的口号与标语
 projects:
   - icon: folder-open
