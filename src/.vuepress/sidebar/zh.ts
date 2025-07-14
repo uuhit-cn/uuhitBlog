@@ -10,11 +10,6 @@ export const zhSidebar = sidebar({
       children: "structure",
     },
     "intro",
-    {
-      text: "幻灯片",
-      icon: "person-chalkboard",
-      link: "https://ecosystem.vuejs.press/zh/plugins/markdown/revealjs/demo.html",
-    },
   ],
   "/zh/demo/": [
     "",
@@ -24,6 +19,11 @@ export const zhSidebar = sidebar({
       prefix: "demo/",
       link: "demo/",
       children: "structure",
+    },
+    {
+      text: "幻灯片",
+      icon: "person-chalkboard",
+      link: "https://ecosystem.vuejs.press/zh/plugins/markdown/revealjs/demo.html",
     },
   ],
   "/zh/codes/": [

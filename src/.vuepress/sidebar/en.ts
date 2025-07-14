@@ -11,11 +11,6 @@ export const enSidebar = sidebar({
       children: "structure",
     },
     "intro",
-    {
-      text: "Slides",
-      icon: "person-chalkboard",
-      link: "https://ecosystem.vuejs.press/plugins/markdown/revealjs/demo.html",
-    },
   ],
   "/demo/": [
     "",
@@ -23,6 +18,11 @@ export const enSidebar = sidebar({
       text: "Demo",
       icon: "laptop-code",
       children: "structure",
+    },
+    {
+      text: "Slides",
+      icon: "person-chalkboard",
+      link: "https://ecosystem.vuejs.press/plugins/markdown/revealjs/demo.html",
     },
   ],
   "/codes/": [
