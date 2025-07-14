@@ -15,13 +15,13 @@ export default hopeTheme({
   pageInfo: false,   // uuhit ，全局禁用 页面信息 小标签
 
   author: {
-    name: "Mr.Hope",
-    url: "https://mister-hope.com",
+    name: "雨冬海",
+    // url: "https://mister-hope.com",
   },
 
-  logo: "https://theme-hope-assets.vuejs.press/logo.svg",
+  logo: "/taijibig.png",
 
-  repo: "vuepress-theme-hope/vuepress-theme-hope",
+  repo: "uuhit-cn/uuhitBlog",
 
   docsDir: "src",
 
@@ -58,7 +58,7 @@ export default hopeTheme({
       displayFooter: true,
 
       blog: {
-        description: "A FrontEnd programmer",
+        description: "活蹦乱跳",
         intro: "/intro.html",
       },
 
@@ -82,7 +82,7 @@ export default hopeTheme({
       displayFooter: true,
 
       blog: {
-        description: "一个前端开发者",
+        description: "活蹦乱跳",
         intro: "/zh/intro.html",
       },
 
