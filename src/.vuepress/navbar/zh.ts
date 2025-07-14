@@ -45,9 +45,9 @@ export const zhNavbar = navbar([
     ],
   },
   {
-    text: "Codes",
+    text: "代码",
     icon: "pen-to-square",
-    prefix: "/codes/",
+    prefix: "/zh/codes/",
     children: [
       {
         text: "Java",
@@ -76,9 +76,9 @@ export const zhNavbar = navbar([
     ],
   },
   {
-    text: "Photo",
+    text: "摄影",
     icon: "pen-to-square",
-    prefix: "/photo/",
+    prefix: "/zh/photo/",
     children: [
       {
         text: "Photo",

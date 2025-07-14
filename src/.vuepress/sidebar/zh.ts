@@ -16,7 +16,7 @@ export const zhSidebar = sidebar({
       link: "https://ecosystem.vuejs.press/zh/plugins/markdown/revealjs/demo.html",
     },
   ],
-  "/demo/": [
+  "/zh/demo/": [
     "",
     {
       text: "如何使用",
@@ -26,7 +26,7 @@ export const zhSidebar = sidebar({
       children: "structure",
     },
   ],
-  "/codes/": [
+  "/zh/codes/": [
     "",
     {
       text: "代码",
@@ -34,7 +34,7 @@ export const zhSidebar = sidebar({
       children: "structure",
     },
   ],
-  "/photo/": [
+  "/zh/photo/": [
     "",
     {
       text: "摄影",
