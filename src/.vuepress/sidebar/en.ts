@@ -4,16 +4,10 @@ export const enSidebar = sidebar({
   "/": [
     "",
     {
-      text: "Demo",
-      icon: "laptop-code",
-      prefix: "demo/",
-      link: "demo/",
-      children: "structure",
-    },
-    {
       text: "Articles",
       icon: "book",
       prefix: "posts/",
+      link: "posts/",
       children: "structure",
     },
     "intro",
@@ -21,6 +15,30 @@ export const enSidebar = sidebar({
       text: "Slides",
       icon: "person-chalkboard",
       link: "https://ecosystem.vuejs.press/plugins/markdown/revealjs/demo.html",
+    },
+  ],
+  "/demo/": [
+    "",
+    {
+      text: "Demo",
+      icon: "laptop-code",
+      children: "structure",
+    },
+  ],
+  "/codes/": [
+    "",
+    {
+      text: "Codes",
+      icon: "laptop-code",
+      children: "structure",
+    },
+  ],
+  "/photo/": [
+    "",
+    {
+      text: "Photo",
+      icon: "laptop-code",
+      children: "structure",
     },
   ],
 });
