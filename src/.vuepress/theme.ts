@@ -10,13 +10,13 @@ const Iconify :string =
     '<svg t="1752471459163" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="873" width="28" height="28"><path d="M0 0h1024v1024H0z" fill="#FFFFFF" p-id="874"></path><path d="M913.408 724.736H110.592a34.688 34.688 0 0 1-34.688-34.688V153.6a34.56 34.56 0 0 1 34.688-34.56h802.816a34.56 34.56 0 0 1 34.688 34.56v536.448a34.688 34.688 0 0 1-34.688 34.688z m-768-69.248h733.44V187.776H145.152z" fill="#0082FD" p-id="875"></path><path d="M477.44 685.696h69.248v158.72H477.44z" fill="#0082FD" p-id="876"></path><path d="M788.48 433.792l-19.84-38.4-100.224 51.2a102.4 102.4 0 0 0-7.808-8.96A99.456 99.456 0 0 0 524.8 433.408l-47.232-47.232a99.456 99.456 0 1 0-184.576 12.8l-84.992 43.904 19.84 38.4 92.16-48a99.584 99.584 0 0 0 133.248-6.912l1.536-1.792L499.2 468.736A99.456 99.456 0 1 0 687.104 486.4z m-439.04-44.16a47.616 47.616 0 1 1 67.328 0 47.488 47.488 0 0 1-67.328 0z m274.432 152.448a47.616 47.616 0 1 1 0-67.328 47.616 47.616 0 0 1 0 67.328z" fill="#ABE3FF" p-id="877"></path><path d="M728.448 836.352v69.248h-432.64v-69.248z" fill="#0082FD" p-id="878"></path></svg>'
 
 export default hopeTheme({
-  hostname: "https://mister-hope.github.io",
+  hostname: "https://uuhit-cn.github.io",
 
   pageInfo: false,   // uuhit ，全局禁用 页面信息 小标签
 
   author: {
     name: "雨冬海",
-    // url: "https://mister-hope.com",
+    url: "https://uuhit-cn.github.io/uuhitBlog/zh/",
   },
 
   logo: "/taijibig.png",
