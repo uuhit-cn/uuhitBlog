@@ -14,6 +14,8 @@ export default hopeTheme({
 
   pageInfo: false,   // uuhit ，全局禁用 页面信息 小标签
 
+  exclude: ["/demo/**"],
+
   author: {
     name: "雨冬海",
     url: "https://uuhit-cn.github.io/uuhitBlog/zh/",

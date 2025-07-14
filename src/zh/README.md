@@ -3,7 +3,7 @@ home: true
 layout: Blog
 icon: house
 title: 博客首页
-hero: false
+hero: true
 heroImage: /taijibig.png
 heroText: 自在飞花轻似梦
 heroFullScreen: false

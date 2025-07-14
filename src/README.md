@@ -3,7 +3,7 @@ home: true
 layout: Blog
 icon: house
 title: HomePage
-hero: false
+hero: ture
 heroImage: /taijibig.png
 heroText: 自在飞花轻似梦
 tagline: You can put your slogan here

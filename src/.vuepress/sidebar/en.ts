@@ -28,11 +28,11 @@ export const enSidebar = sidebar({
   ],
   "/demo/": [
     "",
-    {
-      text: "Demo",
-      icon: "laptop-code",
-      children: "structure",
-    },
+    // {
+    //   text: "Demo",
+    //   icon: "laptop-code",
+    //   children: "structure",
+    // },
     {
       text: "Slides",
       icon: "person-chalkboard",

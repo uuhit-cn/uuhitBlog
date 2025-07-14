@@ -28,13 +28,13 @@ export const zhSidebar = sidebar({
   ],
   "/zh/demo/": [
     "",
-    {
-      text: "如何使用",
-      icon: "laptop-code",
-      prefix: "demo/",
-      link: "demo/",
-      children: "structure",
-    },
+    // {
+    //   text: "如何使用",
+    //   icon: "laptop-code",
+    //   prefix: "demo/",
+    //   link: "demo/",
+    //   children: "structure",
+    // },
     {
       text: "幻灯片",
       icon: "person-chalkboard",
