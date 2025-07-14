@@ -2,7 +2,7 @@ import { navbar } from "vuepress-theme-hope";
 
 export const zhNavbar = navbar([
   "/zh/",
-  // "/zh/demo/",
+  "/zh/demo/",
   {
     text: "博文",
     icon: "pen-to-square",
@@ -42,6 +42,64 @@ export const zhNavbar = navbar([
       { text: "火龙果", icon: "pen-to-square", link: "dragonfruit" },
       "tomato",
       "strawberry",
+    ],
+  },
+  {
+    text: "Codes",
+    icon: "pen-to-square",
+    prefix: "/codes/",
+    children: [
+      {
+        text: "Java",
+        icon: "pen-to-square",
+        prefix: "java/",
+        children: [
+          { text: "Java1", icon: "pen-to-square", link: "1" },
+          { text: "Java2", icon: "pen-to-square", link: "2" },
+          "3",
+        ],
+      },
+      {
+        text: "VBA",
+        icon: "pen-to-square",
+        prefix: "vba/",
+        children: [
+          {
+            text: "VBA 1",
+            icon: "pen-to-square",
+            link: "1",
+          },
+        ],
+      },
+      { text: "C", icon: "pen-to-square", link: "c" },
+      "d",
+    ],
+  },
+  {
+    text: "Photo",
+    icon: "pen-to-square",
+    prefix: "/photo/",
+    children: [
+      {
+        text: "Photo",
+        icon: "pen-to-square",
+        prefix: "ps/",
+        children: [
+          { text: "PS1", icon: "pen-to-square", link: "1" },
+        ],
+      },
+      {
+        text: "Video",
+        icon: "pen-to-square",
+        prefix: "video/",
+        children: [
+          {
+            text: "Video 1",
+            icon: "pen-to-square",
+            link: "1",
+          },
+        ],
+      },
     ],
   },
   // {
