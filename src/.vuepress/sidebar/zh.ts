@@ -11,10 +11,10 @@ export const zhSidebar = sidebar({
       children: "structure",
     },
     {
-      text: "代码",
+      text: "IT",
       icon: "laptop-code",
-      prefix: "codes/",
-      link: "codes/",
+      prefix: "it/",
+      link: "it/",
       children: "structure",
     },
     {
@@ -25,16 +25,6 @@ export const zhSidebar = sidebar({
       children: "structure",
     },
     "intro",
-  ],
-  "/zh/demo/": [
-    "",
-    // {
-    //   text: "如何使用",
-    //   icon: "laptop-code",
-    //   prefix: "demo/",
-    //   link: "demo/",
-    //   children: "structure",
-    // },
     {
       text: "幻灯片",
       icon: "person-chalkboard",

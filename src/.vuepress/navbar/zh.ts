@@ -4,9 +4,9 @@ export const zhNavbar = navbar([
   "/zh/",
   // "/zh/demo/",
   {
-    text: "代码",
+    text: "IT",
     icon: "pen-to-square",
-    prefix: "/zh/codes/",
+    prefix: "/zh/it/",
     children: [
       {
         text: "Java",
@@ -62,7 +62,6 @@ export const zhNavbar = navbar([
       },
     ],
   },
-  "/zh/net/",
   "/zh/notes/",
   // {
   //   text: "V2 文档",

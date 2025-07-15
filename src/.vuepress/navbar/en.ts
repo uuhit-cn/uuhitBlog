@@ -4,9 +4,9 @@ export const enNavbar = navbar([
   "/",
   // "/demo/",
   {
-    text: "Codes",
+    text: "IT",
     icon: "pen-to-square",
-    prefix: "/codes/",
+    prefix: "/it/",
     children: [
       {
         text: "Java",
@@ -62,7 +62,6 @@ export const enNavbar = navbar([
       },
     ],
   },
-  "/net/",
   "/notes/",
   // {
   //   text: "V2 Docs",

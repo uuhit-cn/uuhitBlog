@@ -11,10 +11,10 @@ export const enSidebar = sidebar({
       children: "structure",
     },
     {
-      text: "Codes",
+      text: "IT",
       icon: "laptop-code",
-      prefix: "codes/",
-      link: "codes/",
+      prefix: "it/",
+      link: "it/",
       children: "structure",
     },
     {
@@ -25,14 +25,6 @@ export const enSidebar = sidebar({
       children: "structure",
     },
     "intro",
-  ],
-  "/demo/": [
-    "",
-    // {
-    //   text: "Demo",
-    //   icon: "laptop-code",
-    //   children: "structure",
-    // },
     {
       text: "Slides",
       icon: "person-chalkboard",
