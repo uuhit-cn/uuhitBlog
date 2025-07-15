@@ -73,6 +73,7 @@ export const enNavbar = navbar([
       },
       { text: "C", icon: "pen-to-square", link: "c" },
       "d",
+      "markdownshow",
     ],
   },
   {
