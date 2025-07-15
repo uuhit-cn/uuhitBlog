@@ -4,18 +4,37 @@ export const enSidebar = sidebar({
   "/": [
     "",
     {
-      text: "Articles",
-      icon: "book",
-      prefix: "posts/",
-      link: "posts/",
-      children: "structure",
-    },
-    {
       text: "IT",
       icon: "laptop-code",
       prefix: "it/",
       link: "it/",
-      children: "structure",
+      children: [
+        {
+          text: "Java",
+          icon: "pen-to-square",
+          prefix: "java/",
+          children: [
+            { text: "Java1", icon: "pen-to-square", link: "1" },
+            { text: "Java2", icon: "pen-to-square", link: "2" },
+            "3",
+          ],
+        },
+        {
+          text: "VBA",
+          icon: "pen-to-square",
+          prefix: "vba/",
+          children: [
+            {
+              text: "VBA 1",
+              icon: "pen-to-square",
+              link: "1",
+            },
+          ],
+        },
+        { text: "C", icon: "pen-to-square", link: "c" },
+        "d",
+        "markdownshow",
+      ],
     },
     {
       text: "Photo",

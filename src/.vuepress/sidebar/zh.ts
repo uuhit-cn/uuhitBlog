@@ -4,18 +4,33 @@ export const zhSidebar = sidebar({
   "/zh/": [
     "",
     {
-      text: "文章",
-      icon: "book",
-      prefix: "posts/",
-      link: "posts/",
-      children: "structure",
-    },
-    {
       text: "IT",
       icon: "laptop-code",
       prefix: "it/",
       link: "it/",
-      children: "structure",
+      children: [
+        {
+          text: "Java",
+          icon: "pen-to-square",
+          prefix: "java/",
+          children:  "structure",
+        },
+        {
+          text: "VBA",
+          icon: "pen-to-square",
+          prefix: "vba/",
+          children: [
+            {
+              text: "VBA 1",
+              icon: "pen-to-square",
+              link: "1",
+            },
+          ],
+        },
+        { text: "C", icon: "pen-to-square", link: "c" },
+        "d",
+        "markdownshow",
+      ],
     },
     {
       text: "摄影",

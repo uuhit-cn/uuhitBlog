@@ -1,5 +1,4 @@
 ---
-
 icon: pen-to-square
 date: 2025-07-15
 category:
