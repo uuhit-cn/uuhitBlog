@@ -1,16 +1,16 @@
 ---
 icon: pen-to-square
-date: 2022-01-01
-order: 2
+date: 2025-08-13
+order: 11
 category:
-  - 苹果
+  - nginx,docker
 tag:
   - 红
   - 大
   - 圆
 ---
 
-# java 1
+# docker容器中的前端访问后端容器的三种方式
 
 ## 标题 2
 

@@ -8,29 +8,7 @@ export const zhSidebar = sidebar({
       icon: "laptop-code",
       prefix: "it/",
       link: "it/",
-      children: [
-        {
-          text: "Java",
-          icon: "pen-to-square",
-          prefix: "java/",
-          children:  "structure",
-        },
-        {
-          text: "VBA",
-          icon: "pen-to-square",
-          prefix: "vba/",
-          children: [
-            {
-              text: "VBA 1",
-              icon: "pen-to-square",
-              link: "1",
-            },
-          ],
-        },
-        { text: "C", icon: "pen-to-square", link: "c" },
-        "d",
-        "markdownshow",
-      ],
+      children: "structure",
     },
     {
       text: "摄影",
