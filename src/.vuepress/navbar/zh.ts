@@ -21,7 +21,7 @@ export const zhNavbar = navbar([
         children: [
         ],
       },
-      { text: "docker容器中的前端访问后端容器的三种方式", icon: "pen-to-square", link: "docker容器中的前端访问后端容器的三种方式" },
+      { text: "docker容器中的前端访问后端容器的几种方式", icon: "pen-to-square", link: "docker容器中的前端访问后端容器的几种方式" },
       // "d",
       // "markdownshow",
     ],
