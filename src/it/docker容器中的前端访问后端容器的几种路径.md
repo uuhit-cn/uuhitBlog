@@ -139,6 +139,3 @@ nginx.cnf配置如下：
 ### 其他
 据说还有“host.docker.internal连接”、“127.0.0.1配合特定容器启动设置” 等连接方式，
 因为博主没用过，不了解。
-
-
-test developer
