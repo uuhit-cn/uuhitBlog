@@ -21,7 +21,7 @@ export const enNavbar = navbar([
         children: [
         ],
       },
-      { text: "docker容器中的前端访问后端容器的几种路径", icon: "pen-to-square", link: "docker容器中的前端访问后端容器的几种路径" },
+      { text: "Docker容器中的前端访问后端容器的几种路径", icon: "pen-to-square", link: "Docker容器中的前端访问后端容器的几种路径" },
       // "d",
       // "markdownshow",
     ],
