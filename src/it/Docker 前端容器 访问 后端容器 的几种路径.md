@@ -10,11 +10,11 @@ tag:
   - 圆
 ---
 
-# Docker容器中的前端访问后端容器的几种路径
+# Docker 前端容器 访问 后端容器 的几种路径
 
 ## 一、环境
 阿里云服务器server01， IP：123.56.99.88；
-前端部署在docker容器 “prod-ngxin”，端口映射：80:80；
+前端部署在docker容器 “prod-nginx”，端口映射：80:80；
 后端docker容器 “prod-backend”，端口映射：48081:8080;
 容器都在docker网络 “prod-net”中。
 
@@ -107,7 +107,7 @@ nginx.cnf配置如下：
 当然，对docker网络也没有要求。
 
 &nbsp;&nbsp;&nbsp;&nbsp;步骤1、在后端服务器中ifconfig，确定eth:0 (或者eth:1) 的IP。 例如：172.27.152.x
-&nbsp;&nbsp;&nbsp;&nbsp;步骤2、ngxin.cnf如下，注意是用的是宿主机端口：
+&nbsp;&nbsp;&nbsp;&nbsp;步骤2、nginx.cnf如下，注意是用的是宿主机端口：
 >proxy_pass http://<span style="color:red">172.27.152.x</span>:48081/
 
 路径：prod-nginx 容器 → Docker 网关 → 宿主机 eth0 → 宿主机端口 48081 → prod-backend 容器
@@ -126,7 +126,7 @@ nginx.cnf配置如下：
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;“br-xxxxxx”对应的IP，是手动创建的docker网络。本例是prod-net，IP是17.19.0.1。
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;这两个选用其中任意一个都可以，只要前端后端都在此网段中就行。
 &nbsp;&nbsp;&nbsp;&nbsp;步骤2、建议在前端容器ifconfig，查看一下对应IP，确保同一个网段中。
-&nbsp;&nbsp;&nbsp;&nbsp;步骤3、ngxin.cnf如下，注意是用的是宿主机端口：
+&nbsp;&nbsp;&nbsp;&nbsp;步骤3、nginx.cnf如下，注意是用的是宿主机端口：
 >proxy_pass http://<span style="color:red">172.17.0.1</span>:48081/
 
 路径：prod-nginx 容器 → Docker 网关 → 宿主机 eth0 → 宿主机端口 48081 → prod-backend 容器

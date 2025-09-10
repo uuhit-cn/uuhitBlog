@@ -21,7 +21,7 @@ export const zhNavbar = navbar([
         children: [
         ],
       },
-      { text: "Docker容器中的前端访问后端容器的几种路径", icon: "pen-to-square", link: "Docker容器中的前端访问后端容器的几种路径" },
+      { text: "Docker 前端容器 访问 后端容器 的几种路径", icon: "pen-to-square", link: "Docker 前端容器 访问 后端容器 的几种路径" },
       // "d",
       // "markdownshow",
     ],
