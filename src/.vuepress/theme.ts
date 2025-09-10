@@ -191,6 +191,10 @@ export default hopeTheme({
     //   provider: "Waline",
     //   serverURL: "https://waline-comment.vuejs.press",
     // },
+    comment: {
+      provider: "Waline",
+      serverURL: "http://123.56.77.238:38360",
+    },
 
     components: {
       components: ["Badge", "VPCard"],
