@@ -193,7 +193,7 @@ export default hopeTheme({
     // },
     comment: {
       provider: "Waline",
-      serverURL: "http://123.56.77.238:38360",
+      serverURL: "https://waline-uublog-8hs7atcbt-uuhit-cns-projects.vercel.app/",
     },
 
     components: {
